@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2 {
+  font-family: 'Dancing Script', cursive;
+}
+/*Mudando o tamanho(Largura) da barra de rolagem*/
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+/*Alterando a cor do caminho da barra de rolagem*/
+::-webkit-scrollbar-track{
+    background-color:#222831;
+}
+
+/*Alterando a cor da barra que passa no caminho e a borda*/
+::-webkit-scrollbar-thumb{
+    background-color:#F1F2F3;
+    border-radius: 10px;
+}
+
+.cor-personalizada{
+    background-color: #0D0E10;
+}
+
+.cor-personalizada a:hover{
+    color:#FF9E28; 
+}
+
+.menu li{
+    float:left;
+}
+.menu li a{
+    /*Mudando a cor do link*/
+    color: white;
+
+    /*Dando margem de 25 pixeis a direita dos elementos do 
+    link para não ficarem colados*/
+    margin-right: 25px;
+
+    /*Mud*/
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color:#FF9E28;
+}
+.menu div.icons{
+    float:right;
+}
+div.icons img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+div.icons img:hover{
+    color:#FF9E28;
+}
+
+.fundo{
+    /*Width: 1360px;*/
+    height: 650px; 
+    background: url(/img/bg2.png) no-repeat;
+}
+
+.fundo p,h1{
+    color:#FFFF;
+}
+
+.fundo h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+div.contentor-do-carrossel{
+    position:relative;
+    width: 100%;
+    height: 609px;
+    overflow: hidden;
+}
+
+div.slide-do-carrossel{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.slide-do-carrossel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.texto-do-corrossel{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffff;
+}
+
+div.texto-do-carrossel h1{
+    font-size: 24px;
+    margin-bottom:10px;
+
+}
+
+div.texto-do-carrossel p{
+    font-size: 18px;
+}
+
+.botao{
+    padding:15px;
+    border-style: none;
+    border-radius: 25px;
+    color:#ffff;
+    background-color: #FF9E28;
+    cursor:pointer;
+    font-size: large;
+}
+
+section.cartoes-dia{
+    display: flex;
+}
+.cartao-do-dia{
+    box-sizing: border-box;
+    background-color: #222831;
+    border-radius: 10px;
+    padding:20px 5px 0 10px;
+    width: 555px;
+    height: 225px;
+    margin: 30px;
+    margin-left: 50px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.foto{
+    width: 175px;
+    height: 175px;
+    overflow:hidden;
+    border-radius: 50%;
+    border:4px solid #FF9E28;
+}
+
+.conteudo-cartao-dia{
+    margin:15px 5px 5px 15px;
+    color:#FFFF;
+}
+
+.conteudo-cartao-dia p{
+    margin: 15px 5px 5px 5px;
+    font-size: medium;
+    font-family: 'Dancing Script', cursive;
+}
+.conteudo-cartao-dia h1{
+    margin: 15px 5px;
+    font-size: x-large;
+    font-family: 'Dancing Script', cursive;
+}
+.conteudo-cartao-dia span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.conteudo-cartao-dia .botao img{
+    padding-left: 10px;
+}
+
+.botao:hover{
+    background-color: #E69C00;
+}
+
+.foto:hover img{
+    transform:scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section.Nosso-menu{
+    margin: 70px;
+}
+section div#nosso-menu-cabecalho{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+section div#contentor-de-cartoes{
+    display: flex;
+}
+.caixa{
+    box-sizing: border-box;
+    color: #FFFF;
+    width: 390px;
+    height: 443.5px;
+    margin-left: 20px;
+}
+
+.botao-caixa{
+    padding:10px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #FFBE33;
+    cursor:pointer;
+    float: right;
+}
+
+.botao-caixa:hover{
+    background-color: #E69C00;
+}
+
+.caixa h5{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.imagem-da-caixa{
+    background-color: #F1F2F3;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px 10px 0 60px;
+}
+
+.imagem-da-caixa img:hover{
+    transform:scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.detalhe-da-caixa{
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.detalhe-da-caixa p{
+    padding: 10px 10px 10px 0;
+}
+
+.opcoes{
+    display: flex;
+    padding: 5px;
+}
+
+div#rodape{
+    text-align: center;
+}
+
+section#sobre{
+    display: flex;
+    background-color: #222831;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+div#imagem{
+    padding: 50px 10px 20px 10px;
+}
+
+div#texto{
+    margin-top: 200px;
+    padding: 50px 10px 20px 2px;
+    color: #FFFF;
+}
+
+div#texto h1{
+    padding: 10px 10px 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+}
+
+div#texto p{
+    margin-top: 20px;
+    padding: 0px 10px 10px 0;
+}
+div button{
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #222831;
+    color:#FFFF;
+    box-sizing: border-box;
+}
+
+footer div#colunas-rodape{
+    display: flex;
+    padding: 100px 10px 20px 125px;
+}
+
+
+footer div#colunas-rodape a{
+    text-decoration: none;
+    color:#FFFF;
+    padding-top: 10px;
+}
+
+footer div#colunas-rodape a:hover{
+    color:#FFBE33;
+}
+
+footer div#colunas-rodape h3{
+    font-size: xx-large;
+    font-weight: 700;
+    padding-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer div#contactos{
+    box-sizing: border-box;
+    text-align: center;
+    width: 360px;
+    height: 214px;
+}
+
+footer div#contactos a{
+   font-size: large;
+}
+
+footer div#bd-sabores{
+    text-align: center;
+    width: 360px;
+    height: 214px;
+}
+
+footer div#bd-sabores p{
+    font-size: large;
+ }
+
+footer div#horario{
+    text-align: center;
+    width: 360px;
+    height: 214px;
+}
+
+footer div#horario p{
+    font-size: large;
+ }
+
+footer div#direitos-autorais p{
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 40px;
+}
+
+div#mapa iframe{
+    border-radius: 20px;
+}
+
+div#encomendar{
+    margin: 40px;
+}
+
+div#encomendar h1{
+    color:#3f434d;
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+div#encomendar .row form input{
+    margin: 20px 0 20px 0;
+}
+
+div.carousel-item h1{
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+}
+
+div.a{
+    width: 100px;
+    margin: 50px 10px 10px 50px;
+}
+
